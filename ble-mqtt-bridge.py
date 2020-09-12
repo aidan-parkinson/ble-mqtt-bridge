@@ -13,6 +13,10 @@ from bluepy.btle import Scanner, DefaultDelegate, Peripheral
 
 client = mqtt.Client()
 
+broker = '35.176.252.212'
+port = 8883
+client.tls_set('/etc/ca-certificates/learning-iot-ca.crt')
+
 class ScanDelegate(DefaultDelegate):
     ''' Publishes scan results to MQTT '''
     def __init__(self):
@@ -212,7 +216,7 @@ class CommandThread(Thread):
 #ScannerThread()
 CommandThread()
 
-client.connect("localhost")
+client.connect(broker, port)
 client.loop_start();
 sleep(1)
 client.publish('ble/scan/commands', 5)

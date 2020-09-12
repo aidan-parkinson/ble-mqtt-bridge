@@ -1,7 +1,12 @@
 # ble-mqtt-bridge
 A Python Bluetooth LE to MQTT bridge
 
-## Install device dependencies (you only need to do this once each device)
+## Download pre-shared ca certificate and copy to appropriate folder
+```
+sudo cp ~/Downloads/learning-iot-ca.crt /etc/ca-certificates/learning-iot-ca.crt
+```
+
+## Install device dependencies
 ```
 sudo apt install libglib2.0-dev virtualenv
 ```
@@ -38,7 +43,7 @@ Deactivate the virtual environment
 deactivate
 ```
 
-## Run the bridge
+## To run the bridge (start at this point if you have completed this process before on your device)
 Navigate to project folder
 ```
 cd /opt/ble-mqtt-bridge/

@@ -13,27 +13,41 @@ cd /opt
 ```
 Clone repository
 ```
-sudo clone https://github.com/aidan-parkinson/ble-mqtt-bridge.git
+sudo git clone https://github.com/aidan-parkinson/ble-mqtt-bridge.git
 ```
 
 ## Create virtual environment and install project dependencies
 Navigate to project folder
 ```
-cd /opt/ble-mqtt-bridge
+cd /opt/ble-mqtt-bridge/
 ```
 Create a virtual environment
 ```
 sudo virtualenv venv
 ```
+Activate it
+```
+source venv/bin/activate
+```
 Install project dependencies
 ```
 sudo pip3 install bluepy paho-mqtt
 ```
+Deactivate the virtual environment
+```
+deactivate
+```
 
 ## Run the bridge
-Run like this:
+Navigate to project folder
 ```
-sudo source /opt/ble-mqtt/bin/activate
-
-sudo /opt/ble-mqtt/ble-mqtt-bridge.py
+cd /opt/ble-mqtt-bridge/
+```
+Activate the virtual evironment with pre-installed dependencies
+```
+sudo source venv/bin/activate
+```
+Run the `ble-mqtt-bridge.py` controller
+```
+sudo python3 ble-mqtt-bridge.py
 ```

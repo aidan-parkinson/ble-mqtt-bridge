@@ -6,12 +6,17 @@ import gc
 import json
 import argparse
 import datetime
+import ssl
 from threading import Thread, Semaphore
 from concurrent.futures import ThreadPoolExecutor
 from time import sleep
 from bluepy.btle import Scanner, DefaultDelegate, Peripheral
 
 client = mqtt.Client()
+
+broker = '35.176.252.212'
+port = 8883
+client.tls_set('/etc/ca-certificates/learning-iot-ca.crt', cert_reqs=ssl.CERT_NONE)
 
 class ScanDelegate(DefaultDelegate):
     ''' Publishes scan results to MQTT '''
@@ -212,7 +217,7 @@ class CommandThread(Thread):
 #ScannerThread()
 CommandThread()
 
-client.connect("localhost")
+client.connect(broker, port)
 client.loop_start();
 sleep(1)
 client.publish('ble/scan/commands', 5)

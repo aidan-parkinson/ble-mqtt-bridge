@@ -15,7 +15,7 @@ client = mqtt.Client()
 
 broker = '35.176.252.212'
 port = 8883
-client.tls_set('/etc/ca-certificates/learning-iot-ca.crt')
+client.tls_set('/etc/ca-certificates/learning-iot-ca.crt', cert_reqs=ssl.CERT_NONE)
 
 class ScanDelegate(DefaultDelegate):
     ''' Publishes scan results to MQTT '''

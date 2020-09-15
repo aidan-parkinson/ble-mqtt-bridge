@@ -50,7 +50,7 @@ cd /opt/ble-mqtt-bridge/
 ```
 Activate the virtual evironment with pre-installed dependencies
 ```
-sudo source venv/bin/activate
+source venv/bin/activate
 ```
 Run the `ble-mqtt-bridge.py` controller
 ```

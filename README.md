@@ -3,7 +3,8 @@ A Python Bluetooth LE to MQTT bridge
 
 ## Download pre-shared ca certificate and copy to appropriate folder
 ```
-sudo cp ~/Downloads/learning-iot-ca.crt /etc/ca-certificates/learning-iot-ca.crt
+cd /etc/ca-certificates/learning-iot-ca.crt
+sudo curl -O learning-iot.aidanparkinson.xyz
 ```
 
 ## Install device dependencies

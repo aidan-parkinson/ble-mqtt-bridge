@@ -1,7 +1,7 @@
 # ble-mqtt-bridge
 A Python Bluetooth LE to MQTT bridge
 
-## Download pre-shared ca certificate and copy to appropriate folder
+## Download pre-shared ca certificate to appropriate folder
 ```
 cd /etc/ca-certificates/learning-iot-ca.crt
 sudo curl -O learning-iot.aidanparkinson.xyz

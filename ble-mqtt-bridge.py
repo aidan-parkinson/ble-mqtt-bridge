@@ -14,7 +14,7 @@ from bluepy.btle import Scanner, DefaultDelegate, Peripheral
 
 client = mqtt.Client()
 
-broker = '35.176.252.212'
+broker = 'mqtts.aidanparkinson.xyz'
 port = 8883
 client.tls_set('/etc/ca-certificates/learning-iot-ca.crt', cert_reqs=ssl.CERT_NONE)
 

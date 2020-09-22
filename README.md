@@ -5,7 +5,7 @@ A Python Bluetooth LE to MQTT bridge
 ```
 cd /etc/ssl/certs/learning-iot-ca.crt
 sudo rm learning-iot-ca.crt
-sudo curl -O learning-iot.aidanparkinson.xyz/learning-iot-ca.crt
+sudo curl -O learning-iot.aidanparkinson.xyz
 ```
 
 ## Install device dependencies

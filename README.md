@@ -10,7 +10,7 @@ sudo curl -O learning-iot.aidanparkinson.xyz
 
 ## Install device dependencies
 ```
-sudo apt install libglib2.0-dev virtualenv
+sudo apt-get install libglib2.0-dev virtualenv
 ```
 
 ## Clone this repository

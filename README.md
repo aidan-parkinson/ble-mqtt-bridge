@@ -10,7 +10,9 @@ sudo curl -0 https://learning-iot.aidanparkinson.xyz -o learning-iot-ca.crt
 
 ## Install device dependencies
 ```
-sudo apt-get install libglib2.0-dev virtualenv
+sudo apt update
+sudo apt-get install libglib2.0-dev virtualenv python3-pip
+pip3 --version
 ```
 
 ## Clone this repository

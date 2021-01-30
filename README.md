@@ -40,7 +40,7 @@ source venv/bin/activate
 ```
 Install project dependencies
 ```
-sudo pip3 install bluepy paho-mqtt
+pip3 install bluepy paho-mqtt
 ```
 Deactivate the virtual environment
 ```

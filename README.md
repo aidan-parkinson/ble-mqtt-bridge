@@ -58,5 +58,5 @@ source venv/bin/activate
 ```
 Run the `ble-mqtt-bridge.py` controller
 ```
-sudo python3 ble-mqtt-bridge.py
+python3 ble-mqtt-bridge.py
 ```
